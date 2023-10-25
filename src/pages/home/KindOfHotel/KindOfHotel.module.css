@@ -1,0 +1,57 @@
+.typeCity-controls {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.typeCity-controls h1 {
+  margin-bottom: 50px;
+  font-size: 32px;
+  letter-spacing: 0.3;
+}
+
+.typeCity-controls ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.typeCity-controls li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.typeCity-control__item {
+  border-radius: 20px;
+  height: 350px;
+  cursor: pointer;
+}
+
+.typeCity-control__item-image {
+  border-radius: inherit;
+  border-end-end-radius: unset;
+  border-end-start-radius: unset;
+  overflow: hidden;
+  height: 270px;
+  margin-bottom: 20px;
+}
+
+.typeCity-control__item img {
+  border-radius: inherit;
+  width: 100%;
+  width: 300px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.typeCity-control__item img:hover {
+  transform: scale(1.1);
+}
+
+.typeCity-control__item-content {
+  color: #5a4d4a;
+}
+
+.typeCity-control__item-content p {
+  margin-top: 5px;
+}

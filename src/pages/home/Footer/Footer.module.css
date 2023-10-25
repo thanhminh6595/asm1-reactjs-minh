@@ -1,0 +1,15 @@
+.footer-controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.footer-controls li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.footer-controls a {
+  color: #003580;
+  text-decoration: none;
+}
