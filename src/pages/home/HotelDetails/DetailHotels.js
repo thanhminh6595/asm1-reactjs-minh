@@ -45,37 +45,39 @@ const DetailHotels = (props) => {
   };
 
   return (
-    <div className={styles["hotel-controls"]}>
-      <h1>Homes guests love</h1>
-      <ul className={styles["hotel-control"]}>
-        {hotels.map((hotel) => {
-          return (
-            <li key={hotel.image_url}>
-              <div className={styles["hotel-control__item"]}>
-                <div className={styles["hotel-control__item-image"]}>
-                  <img src={hotel.image_url}></img>
+    <div>
+      <div className={styles["hotel-controls"]}>
+        <h1>Homes guests love</h1>
+        <ul className={styles["hotel-control"]}>
+          {hotels.map((hotel) => {
+            return (
+              <li key={hotel.image_url}>
+                <div className={styles["hotel-control__item"]}>
+                  <div className={styles["hotel-control__item-image"]}>
+                    <img src={hotel.image_url}></img>
+                  </div>
+                  <div className={styles["hotel-control__item-content"]}>
+                    <div className={styles.link}>
+                      <a href="#" onClick={clickDetailHandler}>
+                        {hotel.name}
+                      </a>
+                    </div>
+                    <div className={styles["hotel-item__city"]}>
+                      <p>{hotel.city}</p>
+                    </div>
+                    <div className={styles["hotel-item__price"]}>
+                      <p>Starting from ${hotel.price}</p>
+                    </div>
+                    <div>
+                      <span>{hotel.rate}</span> {hotel.type}
+                    </div>
+                  </div>
                 </div>
-                <div className={styles["hotel-control__item-content"]}>
-                  <div className={styles.link}>
-                    <a href="#" onClick={clickDetailHandler}>
-                      {hotel.name}
-                    </a>
-                  </div>
-                  <div className={styles["hotel-item__city"]}>
-                    <p>{hotel.city}</p>
-                  </div>
-                  <div className={styles["hotel-item__price"]}>
-                    <p>Starting from ${hotel.price}</p>
-                  </div>
-                  <div>
-                    <span>{hotel.rate}</span> {hotel.type}
-                  </div>
-                </div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

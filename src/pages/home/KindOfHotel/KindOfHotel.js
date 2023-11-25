@@ -33,25 +33,27 @@ const KindOfHotel = (props) => {
   const [typeCities, setTypeCities] = useState(DUMMY_TYPECITY);
 
   return (
-    <div className={styles["typeCity-controls"]}>
-      <h1>Browse by Propety Type</h1>
-      <ul>
-        {typeCities.map((typeCity) => {
-          return (
-            <li key={typeCity.image}>
-              <div className={styles["typeCity-control__item"]}>
-                <div className={styles["typeCity-control__item-image"]}>
-                  <img src={typeCity.image}></img>
+    <div>
+      <div className={styles["typeCity-controls"]}>
+        <h1>Browse by Propety Type</h1>
+        <ul>
+          {typeCities.map((typeCity) => {
+            return (
+              <li key={typeCity.image}>
+                <div className={styles["typeCity-control__item"]}>
+                  <div className={styles["typeCity-control__item-image"]}>
+                    <img src={typeCity.image}></img>
+                  </div>
+                  <div className={styles["typeCity-control__item-content"]}>
+                    <h2>{typeCity.name}</h2>
+                    <p>{typeCity.count} hotels</p>
+                  </div>
                 </div>
-                <div className={styles["typeCity-control__item-content"]}>
-                  <h2>{typeCity.name}</h2>
-                  <p>{typeCity.count} hotels</p>
-                </div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

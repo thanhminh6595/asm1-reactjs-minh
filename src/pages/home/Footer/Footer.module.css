@@ -1,7 +1,8 @@
 .footer-controls {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 50px auto;
+  max-width: 1100px;
 }
 
 .footer-controls li {

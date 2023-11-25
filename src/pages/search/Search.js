@@ -6,7 +6,7 @@ import FormSection from "./FormSection/FormSection";
 
 const Search = (props) => {
   return (
-    <div>
+    <div className={styles.search}>
       <NavBar />
       <FormSection />
       <Footer />

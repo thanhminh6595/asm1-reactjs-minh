@@ -1,6 +1,6 @@
 .searchList-controls {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2.5fr;
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -10,7 +10,7 @@
 
 .searchList-controls img {
   width: 100%;
-  height: 300px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -21,8 +21,8 @@
 
 .searchList-control__content h2 {
   color: #198fe3;
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .content-distance,
@@ -31,8 +31,8 @@
 .content-description,
 .content-type,
 .content-cancel p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 
 .searchList-control__content .content-distance {
@@ -97,6 +97,7 @@
 
 .addInfo-bottom p {
   color: #868383;
+  font-size: 15px;
 }
 
 .addInfo-bottom h2,
@@ -112,7 +113,9 @@
   cursor: pointer;
   border: none;
   width: 100%;
-  font-size: 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .addInfo-bottom button:hover {
